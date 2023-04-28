@@ -1,7 +1,7 @@
 function [crela] = tmult(brela, crelb)
     arguments
-        brela {mustBeHomTransfR}
-        crelb {mustBeHomTransfR}
+        brela {functions.mustBeHomTransfR}
+        crelb {functions.mustBeHomTransfR}
     end
     
     crela = crelb * brela;

@@ -1,6 +1,6 @@
 function [uform] = itou(iform)
     arguments
-        iform {mustBeHomTransfR}
+        iform {functions.mustBeHomTransfR}
     end
     x = iform(1, 4);
     y = iform(2, 4);
