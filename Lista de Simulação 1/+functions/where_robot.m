@@ -19,11 +19,7 @@
 %
 %% Hypothesis
 % RRR planar robot.
-%
-%% Limitations
-% É necessário que esta função esteja na mesma pasta que as funções kin,
-% tmult e tinvert, pois estas são utilizadas nos cálculos.
-%
+
 %% Version Control
 %
 % 1.0; Leonardo da Cunha Menegon, Michel Kagan, Vinícius Nardelli; 01/05/2023; First issue.
@@ -41,9 +37,9 @@ function [trels] = where_robot(theta,trelw,srelb,L)
     wrelb = functions.kin(theta, L);
     brels = functions.tinvert(srelb);
     
-    wrels = functions.tmult(wrelb, brels);
+    wrels = functions.tmult(brels, wrelb);
     
 %% Output Data
-    trels = functions.tmult(trelw, wrels);
+    trels = functions.tmult(wrels, trelw);
 end
 
