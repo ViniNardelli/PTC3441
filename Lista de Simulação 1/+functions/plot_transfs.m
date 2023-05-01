@@ -5,27 +5,11 @@ function plot_transfs(T, name, Tant)
         Tant {functions.mustBeHomTransfR}
     end
     
-    subplot(2, 2, 1)
-    title("XY Plane")
-    new_args = functions.zip_args(3, T{:}, name{:}, Tant{:});
-    plot_view(0, 90, new_args{:})
-    
-    subplot(2, 2, 2)
-    title("XZ Plane")
-    new_args = functions.zip_args(3, T{:}, name{:}, Tant{:});
-    plot_view(0, 0, new_args{:})
-    
-    subplot(2, 2, 3)
-    title("YZ Plane")
-    new_args = functions.zip_args(3, T{:}, name{:}, Tant{:});
-    plot_view(90, 0, new_args{:})
-    
-    subplot(2, 2, 4)
-    title("Isometric")
+    title("Diagrama dos Sistemas ")
     new_args = functions.zip_args(3, T{:}, name{:}, Tant{:});
     plot_view(135, 35.264, new_args{:})
     
-    suptitle("Views")
+
     
 end
 
@@ -70,9 +54,11 @@ function plot_view(az, el, T, name, Tant)
     ylabel('Y')
     zlabel('Z')
     
-    xlim(lim(1, :) * 1.1)
-    ylim(lim(2, :) * 1.1)
-    zlim(lim(3, :) * 1.1)
+    range = max(lim(:, 2)-lim(:, 1));
+    
+    xlim([(lim(1,2) + lim(1,1) - range)/2, (lim(1,2) + lim(1,1) + range)/2])
+    ylim([(lim(2,2) + lim(2,1) - range)/2, (lim(2,2) + lim(2,1) + range)/2])
+    zlim([(lim(3,2) + lim(3,1) - range)/2, (lim(3,2) + lim(3,1) + range)/2])
 end
 
 function [lim] = plot_coord(view, T, name, O)
