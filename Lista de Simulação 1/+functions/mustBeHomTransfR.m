@@ -1,5 +1,6 @@
 function isHomTransfR = mustBeHomTransfR(T, tol)
-%Check if the matrix T is a right-handed homogeneous transformation
+% Auxiliary function that checks if the matrix T is a right-handed
+%  homogeneous transformation
     arguments (Input)
         T (4, 4) {mustBeNumeric, mustBeReal, mustBeFinite}
         tol (1, 1) {mustBeNumeric, mustBeReal, mustBeFinite, mustBePositive} = 1E-6
