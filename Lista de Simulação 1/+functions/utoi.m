@@ -37,7 +37,7 @@
 %
 % 1.1; Fábio Fialho; 2019/09/12 ; Minor modifications.
 %
-% 1.2; Vicente Servio Saraiva Orrú, Vinícius Nardelli Santiago; 2025/05/25;
+% 1.2; Vicente Servio Saraiva Orrú, Vinícius Nardelli Santiago; 2026/04/13;
 % Add validity, example and tests
 % 
 %% Function
