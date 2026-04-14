@@ -1,4 +1,3 @@
-
 function tests = utoiTest
     tests = functiontests(localfunctions);
 end
