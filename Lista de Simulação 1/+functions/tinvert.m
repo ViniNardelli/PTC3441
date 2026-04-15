@@ -1,6 +1,7 @@
 %% UTOI   
 % Realiza a inversão de uma matriz de transformação homogênea:
-% $\left({}^B T_A\right)^{-1} = {}^A T_B$
+%
+% $$\left({}^B_A T\right)^{-1} = {}^A_B T$$
 % 
 %% Calling Syntax
 % arelb = tinvert(brela)
