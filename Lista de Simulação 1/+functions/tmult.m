@@ -2,7 +2,7 @@
 % Realiza a multiplicação de duas matrizes de transformação homogênea
 % entre si:
 %
-% $${}^A T_C = {}^A T_B \cdot {}^B T_C$$
+% $${}^A_C T = {}^A_B T \cdot {}^B_C T$$
 % 
 %% Calling Syntax
 % crela = tmult(brela, crelb)
