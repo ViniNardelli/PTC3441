@@ -1,7 +1,8 @@
-% TMULT
+%% TMULT
 % Realiza a multiplicação de duas matrizes de transformação homogênea
 % entre si:
-% ${}^A T_C = {}^A T_B * {}^B T_C$
+%
+% $${}^A T_C = {}^A T_B \cdot {}^B T_C$$
 % 
 %% Calling Syntax
 % crela = tmult(brela, crelb)
