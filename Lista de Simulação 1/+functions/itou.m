@@ -1,7 +1,7 @@
 %% ITOU
 % Converte o formato interno (matriz de transformação homogênea) de um 
 % manipulador RRR planar para o formato do usuário
-% $(x,y,\theta)$
+% $(x, y, \theta)$
 % 
 %% Calling Syntax
 % uform = itou(iform)

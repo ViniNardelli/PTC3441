@@ -1,6 +1,6 @@
 %% UTOI
 % Converte o formato de entrada de dados do usuário
-% $(x,y,\theta)$
+% $(x, y, \theta)$
 % para o formato interno (matriz de transformação homogênea)
 % para um manipulador RRR planar.
 % 
