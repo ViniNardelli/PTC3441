@@ -1,4 +1,4 @@
-%% UTOI   
+%% TINVERT
 % Realiza a inversão de uma matriz de transformação homogênea:
 %
 % $$\left({}^B_A T\right)^{-1} = {}^A_B T$$
@@ -28,7 +28,7 @@
 % For more examples, see "../tests/tinvertTest"
 %
 %% Hypothesis
-% RRR planar robot.
+%  brela is a homogenous transformation.
 %
 %% Limitations
 % MatLab version: >= R2023a
@@ -46,7 +46,7 @@ function [arelb] = tinvert(brela)
     end
 
     arguments (Output)
-        arelb {functions.mustBeHomTRansfR}
+        arelb {functions.mustBeHomTransfR}
     end
     
 %% Main Calculations
