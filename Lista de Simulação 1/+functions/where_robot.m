@@ -36,8 +36,6 @@
 %         0         0              0    1.0000
 %
 %
-% For more examples, see "../tests/where_robotTest"
-%
 %% Hypothesis
 % RRR planar robot.
 %

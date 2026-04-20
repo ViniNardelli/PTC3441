@@ -32,10 +32,9 @@
 %      0     0     1     0
 %      0     0     0     1
 %
-% For more examples, see "../tests/tmultTest"
 %
 %% Hypothesis
-% RRR planar robot.
+% None
 %
 %% Limitations
 % MatLab version: >= R2023a
