@@ -23,7 +23,7 @@
 % |OUT Double| *sol*: Number of solutions
 %
 %% Example
-% [near, far, sol] = functions.invkin(functions.kin([30 45 60]))
+% [near, far, sol] = functions.invkin(functions.kin([30 45 60]), [0, 0, 0])
 % 
 % near =
 % 
@@ -57,7 +57,7 @@ function [near, far, sol] = invkin(wrelb, current, L, thetalim)
 arguments (Input)
 
     wrelb (4,4) {functions.mustBeHomTransfR}
-    current (1,3) {mustBeNumeric, mustBeReal, mustBeFinite} = [0, 0, 0]
+    current (1,3) {mustBeNumeric, mustBeReal, mustBeFinite}
     L (1,2) {mustBeNumeric, mustBeReal, mustBeFinite} = [0.5, 0.3]
     thetalim (3, 2) {mustBeNumeric, mustBeReal, mustBeFinite} = repmat([-170, 170], 3, 1)
 
