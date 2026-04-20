@@ -3,16 +3,14 @@
 % ângulos de junta e dos comprimentos dos ligamentos, ou seja, a matriz de
 % transformação homogênea do
 % punho em relação a base
-% $$\left({}^B_W T\right)$$
-% a partir de $\theta$
-% (ângulos de junta) e de L (comprimentos dos ligamentos).
-% 
+%
+% $$ {}^B_W T = \left[ \matrix{ c_{123} & -s_{123} & 0 & L_1 c_1 + L_2 c_{12} \cr s_{123} & c_{123} & 0 & L_1 s_1 + L_2 s_{12} \cr 0 & 0 & 1 & 0 \cr 0 & 0 & 0 & 1 } \right] $$
+%
 %% Calling Syntax
 % wrelb = kin(theta, L)
 %
 %% I/O Variables
-% |IN Double Array| *theta*: [theta1 theta2 theta3] [degrees degrees
-% degress]
+% |IN Double Array| *theta*: [theta1 theta2 theta3] [degrees degrees degress]
 %
 % |IN Double Array| *L*: [l1 l2] [meters meters]
 %
@@ -33,7 +31,6 @@
 %          0         0    1.0000         0
 %          0         0         0    1.0000
 %
-% For more examples, see "../tests/kinTest"
 %% Hypothesis
 % RRR planar robot.
 %
